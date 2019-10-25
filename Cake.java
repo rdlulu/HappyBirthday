@@ -21,8 +21,8 @@ public class Cake {
                     this.cake[i][j] = 'X';
                 }
                 //draw random candles
+                Random r = new Random();
                 if(2 *(i - 20) * (i - 20) + (j - 50) * (j - 50) / 4 <= 60) {
-                    Random r = new Random();
                     if(r.nextInt(100) == 25) {
                         int k = 0;
                         while(k++ <= 10) {
