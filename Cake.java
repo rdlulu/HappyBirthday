@@ -5,6 +5,7 @@ public class Cake {
     char[][] cake;
     public Cake() {
         this.cake = new char[60][200];
+        Random r = new Random();
         //draw pan
         for(int i = 0; i < this.cake.length; i++) {
             for(int j = 0; j < this.cake[0].length; j++) {
@@ -21,7 +22,6 @@ public class Cake {
                     this.cake[i][j] = 'X';
                 }
                 //draw random candles
-                Random r = new Random();
                 if(2 *(i - 20) * (i - 20) + (j - 50) * (j - 50) / 4 <= 60) {
                     if(r.nextInt(100) == 25) {
                         int k = 0;
